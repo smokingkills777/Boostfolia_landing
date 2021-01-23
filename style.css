@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -moz-box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
 }
 body{
@@ -262,6 +263,9 @@ header .container{
 .showFlex{
     display: flex !important;
     animation: fadeInFromNone .5s ease-out;
+    -webkit-animation: fadeInFromNone .5s ease-out;
+    -moz-animation: fadeInFromNone .5s ease-out;
+    -o-animation: fadeInFromNone .5s ease-out;
 }
 
 @keyframes fadeInFromNone {
@@ -295,7 +299,8 @@ header .container{
 .team__cart{
     justify-content: space-between;
     margin-top: 84px;
-    transition: all 3s linear;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
 }
 .team__main, .team__info{
     background-color: #ebebeb;
@@ -378,6 +383,7 @@ header .container{
 }
 #member00, #member01, #member02{
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
 }
 #member01, #member02{
     display: none;
@@ -438,6 +444,7 @@ header .container{
 }
 .blog__img-wrapper{
     transition: all .3s linear;
+    -webkit-transition: all .3s linear;
     position: relative;
     cursor: pointer;
 }
