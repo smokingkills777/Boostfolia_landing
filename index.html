@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boostfolia</title>
+    <link rel="stylesheet" href="gallery/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;700&family=Teko:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container container-row">
+            <div class="logo container-row">
+                <img src="img/logo.png" alt="">
+                <div class="logo__text">boostfolia</div>
+            </div>
+            <div class="menu">
+                <img src="img/menu.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="promo wrapper">
+            <div class="container-full">
+                <div class="promo__title">WE THINK CREATIVE BE CREATIVE</div>
+                <div class="promo__subtitle">LIKE TO DO CREATIVE WORKS</div>
+                <div id="mouse" class="container-column">
+                    <img src="img/mouse.png" alt="">
+                    <div id="mouse-text">scroll down</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about wrapper">
+            <div class="container">
+                <div class="section-title">about us</div>
+                <hr class="line-orange">
+                <div class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+
+                <div class="list">
+                    <div class="list__item list__item_about container-column">
+                        <img src="img/about/01.png" alt="" class="list__icon">
+                        <div class="list__title">CREATIVE DESIGN</div>
+                        <div class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</div>
+                    </div>
+                    <div class="list__item list__item_about container-column">
+                        <img src="img/about/02.png" alt="" class="list__icon">
+                        <div class="list__title">UNIQU PORTFOLIO</div>
+                        <div class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</div>
+                    </div>
+                    <div class="list__item list__item_about container-column">
+                        <img src="img/about/03.png" alt="" class="list__icon">
+                        <div class="list__title">INFINITE UPDATES</div>
+                        <div class="list__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do . . .</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video wrapper">
+            <div class="video__info">
+                <div class="video__title">WATCH BEHIND THE SCENE</div>
+                <div class="section__subtitle">
+                    Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                </div>
+                <div class="button">play now</div>
+            </div>
+            <div class="video__content">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IUN664s7N-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="works wrapper">
+            <div class="container-full">
+                <div class="section-title">our works</div>
+                <hr class="line-orange">
+                <div class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+
+                <div class="works__gallery">
+                    <div id="myBtnContainer" class="works__menu">
+                        <button class="btn active works__category" onclick="filterSelection('all')">all projects</button>
+                        <button class="btn works__category" onclick="filterSelection('photo')">photography</button>
+                        <button class="btn works__category" onclick="filterSelection('web')">web design</button>
+                        <button class="btn works__category" onclick="filterSelection('brand')">branding</button>
+                        <button class="btn works__category" onclick="filterSelection('mobile')">mobile app</button>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="column photo">
+                            <img src="img/works/01.jpg" alt="">
+                        </div>
+                        <div class="column photo">
+                            <img src="img/works/02.jpg" alt="">
+                        </div>
+                        <div class="column photo">
+                            <img src="img/works/03.jpg" alt="">
+                        </div>
+                        <div class="column photo">
+                            <img src="img/works/04.jpg" alt="">
+                        </div>
+                        <div class="column web">
+                            <img src="img/works/05.jpg" alt="">
+                        </div>
+                        <div class="column web">
+                            <img src="img/works/06.jpg" alt="">
+                        </div>
+                        <div class="column web">
+                            <img src="img/works/07.jpg" alt="">
+                        </div>
+                        <div class="column web">
+                            <img src="img/works/08.jpg" alt="">
+                        </div>
+                        <div class="column web">
+                            <img src="img/works/09.jpg" alt="">
+                        </div>
+                        <div class="column brand">
+                            <img src="img/works/10.jpg" alt="">
+                        </div>
+                        <div class="column brand">
+                            <img src="img/works/11.jpg" alt="">
+                        </div>
+                        <div class="column brand">
+                            <img src="img/works/12.jpg" alt="">
+                        </div>
+                        <div class="column mobile">
+                            <img src="img/works/13.jpg" alt="">
+                        </div>
+                        <div class="column mobile">
+                            <img src="img/works/14.jpg" alt="">
+                        </div>
+                        <div class="column mobile">
+                            <img src="img/works/15.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners wrapper">
+            <div class="container">
+                <div class="list">
+                    <div class="list-item container-column">
+                        <img src="img/partners/01.png" alt="">
+                    </div>
+                    <div class="list-item container-column">
+                        <img src="img/partners/02.png" alt="">
+                    </div>
+                    <div class="list-item container-column">
+                        <img src="img/partners/03.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team wrapper">
+            <div class="container">
+                <div class="section-title">who we are</div>
+                <hr class="line-orange">
+                <div class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+
+                <div class="team__cart container-row" id="member00">
+                    <div class="team__main container-column">
+                        <img src="img/team/team_01.jpg" alt="" class="team__photo">
+                        <div class="team__name">JANE SMITH</div>
+                        <div class="team__position">DESIGNER</div>
+                        <ul class="team__social container-row">
+                            <li><img src="img/team/social_01.png" alt=""></li>
+                            <li><img src="img/team/social_02.png" alt=""></li>
+                            <li><img src="img/team/social_03.png" alt=""></li>
+                        </ul>
+                        <div class="radio-button">
+                            <input type="button" onclick="team(0)" class="radio_active">
+                            <input type="button" onclick="team(1)">
+                            <input type="button" onclick="team(2)">
+                        </div>
+                    </div>
+                    <div class="team__info">
+                        <div class="team__title">my skills</div>
+                        <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
+                        <div class="team__skills">
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">photoshop</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 88%;">
+                                    <hr class="progress_white" style="width: 12%;">
+                                </div>
+                                <div class="team__skill-number">88%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">illustrator</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 92%;">
+                                    <hr class="progress_white" style="width: 8%;">
+                                </div>
+                                <div class="team__skill-number">92%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">sketch</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 90%;">
+                                    <hr class="progress_white" style="width: 10%;">
+                                </div>
+                                <div class="team__skill-number">90%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">after effects</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 98%;">
+                                    <hr class="progress_white" style="width: 2%;">
+                                </div>
+                                <div class="team__skill-number">98%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team__cart container-row" id="member01">
+                    <div class="team__main container-column">
+                        <img src="img/team/team_02.jpg" alt="" class="team__photo">
+                        <div class="team__name">ALEX COUCH</div>
+                        <div class="team__position">FRONTEND DEVELOPER</div>
+                        <ul class="team__social container-row">
+                            <li><img src="img/team/social_01.png" alt=""></li>
+                            <li><img src="img/team/social_02.png" alt=""></li>
+                            <li><img src="img/team/social_03.png" alt=""></li>
+                        </ul>
+                        <div class="radio-button">
+                            <input type="button" onclick="team(0)">
+                            <input type="button" onclick="team(1)" class="radio_active">
+                            <input type="button" onclick="team(2)">
+                        </div>
+                    </div>
+                    <div class="team__info">
+                        <div class="team__title">my skills</div>
+                        <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
+                        <div class="team__skills">
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">html</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 98%;">
+                                    <hr class="progress_white" style="width: 2%;">
+                                </div>
+                                <div class="team__skill-number">98%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">css</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 95%;">
+                                    <hr class="progress_white" style="width: 5%;">
+                                </div>
+                                <div class="team__skill-number">95%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">javascript</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 81%;">
+                                    <hr class="progress_white" style="width: 19%;">
+                                </div>
+                                <div class="team__skill-number">81%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">bootstrap</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 75%;">
+                                    <hr class="progress_white" style="width: 25%;">
+                                </div>
+                                <div class="team__skill-number">75%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="team__cart container-row" id="member02">
+                    <div class="team__main container-column">
+                        <img src="img/team/team_03.jpg" alt="" class="team__photo">
+                        <div class="team__name">KATE DANWER</div>
+                        <div class="team__position">BACKEND DEVELOPER</div>
+                        <ul class="team__social container-row">
+                            <li><img src="img/team/social_01.png" alt=""></li>
+                            <li><img src="img/team/social_02.png" alt=""></li>
+                            <li><img src="img/team/social_03.png" alt=""></li>
+                        </ul>
+                        <div class="radio-button">
+                            <input type="button" onclick="team(0)">
+                            <input type="button" onclick="team(1)">
+                            <input type="button" onclick="team(2)" class="radio_active">
+                        </div>
+                    </div>
+                    <div class="team__info">
+                        <div class="team__title">my skills</div>
+                        <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
+                        <div class="team__skills">
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">php</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 91%;">
+                                    <hr class="progress_white" style="width: 9%;">
+                                </div>
+                                <div class="team__skill-number">91%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">python</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 78%;">
+                                    <hr class="progress_white" style="width: 22%;">
+                                </div>
+                                <div class="team__skill-number">78%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">node js</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 87%;">
+                                    <hr class="progress_white" style="width: 13%;">
+                                </div>
+                                <div class="team__skill-number">87%</div>
+                            </div>
+
+                            <div class="team__skill-block">
+                                <div class="team__skill-name">mysql</div>
+                                <div class="team__skill-line">
+                                    <hr class="progress" style="width: 92%;">
+                                    <hr class="progress_white" style="width: 8%;">
+                                </div>
+                                <div class="team__skill-number">92%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features wrapper">
+            <div class="container">
+                <div class="section-title-second">some features</div>
+                <hr class="line-grey">
+
+                <div class="list">
+                    <div class="list__item list__item_features container-column">
+                        <img src="img/features/01.png" alt="" class="list__icon">
+                        <div class="list__title">Shortcodes</div>
+                        <div class="list__text">46</div>
+                    </div>
+                    <div class="list__item list__item_features container-column">
+                        <img src="img/features/02.png" alt="" class="list__icon">
+                        <div class="list__title">Integrated Plugins</div>
+                        <div class="list__text">128</div>
+                    </div>
+                    <div class="list__item list__item_features container-column">
+                        <img src="img/features/03.png" alt="" class="list__icon">
+                        <div class="list__title">Creative Products</div>
+                        <div class="list__text">450</div>
+                    </div>
+                    <div class="list__item list__item_features container-column">
+                        <img src="img/features/04.png" alt="" class="list__icon">
+                        <div class="list__title">Clients Worldwide</div>
+                        <div class="list__text">100+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog wrapper">
+            <div class="container">
+                <div class="section-title">blog posts</div>
+                <hr class="line-orange">
+                <div class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+
+                <div class="blog__gallery">
+                    <div class="blog__item">
+                        <div class="blog__img-wrapper">
+                            <img src="img/blog/01.jpg" alt="" class="blog__photo">
+                            <div class="blog__refs">
+                                <img src="img/blog/icon_01.png" alt="">
+                                <img src="img/blog/icon_02.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="blog__content">
+                            <div class="blog__title">Creat Creative & Clean</div>
+                            <div class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="blog__sign">
+                                <div class="blog__date">
+                                    <img src="img/blog/icon_03_date.png" alt="">
+                                    25 Jan 2015
+                                </div>
+                                <div class="blog__feedback">
+                                    <img src="img/blog/icon_04_like.png" alt="">
+                                    25
+                                    <img src="img/blog/icon_05_comment.png" alt="">
+                                    11
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog__item">
+                        <div class="blog__img-wrapper">
+                            <img src="img/blog/02.jpg" alt="" class="blog__photo">
+                            <div class="blog__refs">
+                                <img src="img/blog/icon_01.png" alt="">
+                                <img src="img/blog/icon_02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__title">Make A Sleek Break</div>
+                            <div class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="blog__sign">
+                                <div class="blog__date">
+                                    <img src="img/blog/icon_03_date.png" alt="">
+                                    25 Jan 2015
+                                </div>
+                                <div class="blog__feedback">
+                                    <img src="img/blog/icon_04_like.png" alt="">
+                                    25
+                                    <img src="img/blog/icon_05_comment.png" alt="">
+                                    11
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog__item">
+                        <div class="blog__img-wrapper">
+                            <img src="img/blog/03.jpg" alt="" class="blog__photo">
+                            <div class="blog__refs">
+                                <img src="img/blog/icon_01.png" alt="">
+                                <img src="img/blog/icon_02.png" alt="">
+                            </div>
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__title">Creative Manipulations</div>
+                            <div class="blog__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="blog__sign">
+                                <div class="blog__date">
+                                    <img src="img/blog/icon_03_date.png" alt="">
+                                    25 Jan 2015
+                                </div>
+                                <div class="blog__feedback">
+                                    <img src="img/blog/icon_04_like.png" alt="">
+                                    25
+                                    <img src="img/blog/icon_05_comment.png" alt="">
+                                    11
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="plan wrapper">
+            <div class="container">
+                <div class="section-title-second">chose plan</div>
+                <hr class="line-grey">
+
+                <div class="plan__gallery container-row">
+                    <div class="plan__item">
+                        <div class="plan__header">
+                            <div class="plan__type">basic</div>
+                            <div class="plan__price">Free</div>
+                        </div>
+                        <div class="plan__content">
+                            <p><span>20</span> Pages</p>
+                            <p><span>2</span> GB Storage</p>
+                            <p><span>150</span> Members</p>
+                            <p><span>2</span> Contributors</p>
+                            <div class="button">purchase</div>
+                        </div>
+                    </div>
+
+                    <div class="plan__item">
+                        <div class="plan__header">
+                            <div class="plan__type">standart</div>
+                            <div class="plan__price">$24.00</div>
+                        </div>
+                        <div class="plan__content">
+                            <p><span>25</span> Pages</p>
+                            <p><span>10</span> GB Storage</p>
+                            <p><span>300</span> Members</p>
+                            <p><span>5</span> Contributors</p>
+                            <div class="button">purchase</div>
+                        </div>
+                    </div>
+
+                    <div class="plan__item">
+                        <div class="plan__header">
+                            <div class="plan__type">premium</div>
+                            <div class="plan__price">$40.00</div>
+                        </div>
+                        <div class="plan__content">
+                            <p><span>30</span> Pages</p>
+                            <p><span>20</span> GB Storage</p>
+                            <p><span>500</span> Members</p>
+                            <p><span>10</span> Contributors</p>
+                            <div class="button">purchase</div>
+                        </div>
+                    </div>
+
+                    <div class="plan__item">
+                        <div class="plan__header">
+                            <div class="plan__type">professional</div>
+                            <div class="plan__price">$75.00</div>
+                        </div>
+                        <div class="plan__content">
+                            <p><span>40</span> Pages</p>
+                            <p><span>40</span> GB Storage</p>
+                            <p><span>1000</span> Members</p>
+                            <p><span>20</span> Contributors</p>
+                            <div class="button">purchase</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feedback wrapper">
+            <div class="container">
+                <div class="section-title">get in touch</div>
+                <hr class="line-orange">
+                <div class="section__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+
+                <div class="feedback__form">
+                    <form action="#">
+                        <div class="feedback__item container-column">
+                            <label for="name">name <span>*</span></label>
+                            <input type="text" name="name">
+                        </div>
+                        <div class="feedback__item container-column">
+                            <label for="name">mail <span>*</span></label>
+                            <input type="text" name="mail">
+                        </div>
+                        <label for="message">message <span>*</span></label>
+                        <textarea name="message" id="message" ></textarea>
+
+                        <div class="button">send message</div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="logo footer__content container-column">
+                <img src="img/logo.png" alt="">
+                <div class="logo__text logo__text_footer">boostfolia</div>
+                <div class="footer__sign">made with love by Hordovskyi Mykhailo</div>
+                <ul class="team__social container-row">
+                    <li><img src="img/team/social_01.png" alt=""></li>
+                    <li><img src="img/team/social_02.png" alt=""></li>
+                    <li><img src="img/team/social_03.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/teamSwitch.js"></script>
+    <script src="gallery/script.js"></script>
+</body>
+</html>
