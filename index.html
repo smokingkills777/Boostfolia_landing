@@ -6,6 +6,8 @@
     <title>Boostfolia</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="gallery/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;700&family=Teko:wght@400;500&display=swap" rel="stylesheet">
@@ -144,8 +146,8 @@
         </section>
 
         <section class="partners wrapper">
-            <div class="container">
-                <div class="list">
+<!--             <div class="container">
+                <div class="slider">
                     <div class="list-item container-column">
                         <img src="img/partners/01.png" alt="">
                     </div>
@@ -154,6 +156,23 @@
                     </div>
                     <div class="list-item container-column">
                         <img src="img/partners/03.png" alt="">
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="container">
+                <div class="slider">
+                    <div class="slider__item">
+                        <img src="img/partners/01.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/partners/02.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/partners/03.png" alt="">
+                    </div>
+                    <div class="slider__item">
+                        <img src="img/partners/02.png" alt="">
                     </div>
                 </div>
             </div>
@@ -166,182 +185,183 @@
                 <div class="section__subtitle">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </div>
-
-                <div class="team__cart container-row" id="member00">
-                    <div class="team__main container-column">
-                        <img src="img/team/team_01.jpg" alt="" class="team__photo">
-                        <div class="team__name">JANE SMITH</div>
-                        <div class="team__position">DESIGNER</div>
-                        <ul class="team__social container-row">
-                            <li><img src="img/team/social_01.png" alt=""></li>
-                            <li><img src="img/team/social_02.png" alt=""></li>
-                            <li><img src="img/team/social_03.png" alt=""></li>
-                        </ul>
-                        <div class="radio-button">
-                            <input type="button" onclick="team(0)" class="radio_active">
-                            <input type="button" onclick="team(1)">
-                            <input type="button" onclick="team(2)">
-                        </div>
-                    </div>
-                    <div class="team__info">
-                        <div class="team__title">my skills</div>
-                        <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
-                        <div class="team__skills">
-
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">photoshop</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 88%;">
-                                    <hr class="progress_white" style="width: 12%;">
-                                </div>
-                                <div class="team__skill-number">88%</div>
-                            </div>
-
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">illustrator</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 92%;">
-                                    <hr class="progress_white" style="width: 8%;">
-                                </div>
-                                <div class="team__skill-number">92%</div>
-                            </div>
-
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">sketch</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 90%;">
-                                    <hr class="progress_white" style="width: 10%;">
-                                </div>
-                                <div class="team__skill-number">90%</div>
-                            </div>
-
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">after effects</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 98%;">
-                                    <hr class="progress_white" style="width: 2%;">
-                                </div>
-                                <div class="team__skill-number">98%</div>
+                <div class="slider__team">
+                    <div class="team__cart container-row">
+                        <div class="team__main container-column">
+                            <img src="img/team/team_01.jpg" alt="" class="team__photo">
+                            <div class="team__name">JANE SMITH</div>
+                            <div class="team__position">DESIGNER</div>
+                            <ul class="team__social container-row">
+                                <li><img src="img/team/social_01.png" alt=""></li>
+                                <li><img src="img/team/social_02.png" alt=""></li>
+                                <li><img src="img/team/social_03.png" alt=""></li>
+                            </ul>
+                            <div class="radio-button">
+                                <input type="button" onclick="team(0)" class="radio_active">
+                                <input type="button" onclick="team(1)">
+                                <input type="button" onclick="team(2)">
                             </div>
                         </div>
-                    </div>
-                </div>
+                        <div class="team__info">
+                            <div class="team__title">my skills</div>
+                            <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
+                            <div class="team__skills">
 
-                <div class="team__cart container-row" id="member01">
-                    <div class="team__main container-column">
-                        <img src="img/team/team_02.jpg" alt="" class="team__photo">
-                        <div class="team__name">ALEX COUCH</div>
-                        <div class="team__position">FRONTEND DEVELOPER</div>
-                        <ul class="team__social container-row">
-                            <li><img src="img/team/social_01.png" alt=""></li>
-                            <li><img src="img/team/social_02.png" alt=""></li>
-                            <li><img src="img/team/social_03.png" alt=""></li>
-                        </ul>
-                        <div class="radio-button">
-                            <input type="button" onclick="team(0)">
-                            <input type="button" onclick="team(1)" class="radio_active">
-                            <input type="button" onclick="team(2)">
-                        </div>
-                    </div>
-                    <div class="team__info">
-                        <div class="team__title">my skills</div>
-                        <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
-                        <div class="team__skills">
-
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">html</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 98%;">
-                                    <hr class="progress_white" style="width: 2%;">
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">photoshop</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 88%;">
+                                        <hr class="progress_white" style="width: 12%;">
+                                    </div>
+                                    <div class="team__skill-number">88%</div>
                                 </div>
-                                <div class="team__skill-number">98%</div>
-                            </div>
 
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">css</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 95%;">
-                                    <hr class="progress_white" style="width: 5%;">
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">illustrator</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 92%;">
+                                        <hr class="progress_white" style="width: 8%;">
+                                    </div>
+                                    <div class="team__skill-number">92%</div>
                                 </div>
-                                <div class="team__skill-number">95%</div>
-                            </div>
 
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">javascript</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 81%;">
-                                    <hr class="progress_white" style="width: 19%;">
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">sketch</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 90%;">
+                                        <hr class="progress_white" style="width: 10%;">
+                                    </div>
+                                    <div class="team__skill-number">90%</div>
                                 </div>
-                                <div class="team__skill-number">81%</div>
-                            </div>
 
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">bootstrap</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 75%;">
-                                    <hr class="progress_white" style="width: 25%;">
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">after effects</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 98%;">
+                                        <hr class="progress_white" style="width: 2%;">
+                                    </div>
+                                    <div class="team__skill-number">98%</div>
                                 </div>
-                                <div class="team__skill-number">75%</div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="team__cart container-row" id="member02">
-                    <div class="team__main container-column">
-                        <img src="img/team/team_03.jpg" alt="" class="team__photo">
-                        <div class="team__name">KATE DANWER</div>
-                        <div class="team__position">BACKEND DEVELOPER</div>
-                        <ul class="team__social container-row">
-                            <li><img src="img/team/social_01.png" alt=""></li>
-                            <li><img src="img/team/social_02.png" alt=""></li>
-                            <li><img src="img/team/social_03.png" alt=""></li>
-                        </ul>
-                        <div class="radio-button">
-                            <input type="button" onclick="team(0)">
-                            <input type="button" onclick="team(1)">
-                            <input type="button" onclick="team(2)" class="radio_active">
+                    <div class="team__cart container-row">
+                        <div class="team__main container-column">
+                            <img src="img/team/team_02.jpg" alt="" class="team__photo">
+                            <div class="team__name">ALEX COUCH</div>
+                            <div class="team__position">FRONTEND DEVELOPER</div>
+                            <ul class="team__social container-row">
+                                <li><img src="img/team/social_01.png" alt=""></li>
+                                <li><img src="img/team/social_02.png" alt=""></li>
+                                <li><img src="img/team/social_03.png" alt=""></li>
+                            </ul>
+                            <div class="radio-button">
+                                <input type="button" onclick="team(0)">
+                                <input type="button" onclick="team(1)" class="radio_active">
+                                <input type="button" onclick="team(2)">
+                            </div>
+                        </div>
+                        <div class="team__info">
+                            <div class="team__title">my skills</div>
+                            <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
+                            <div class="team__skills">
+
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">html</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 98%;">
+                                        <hr class="progress_white" style="width: 2%;">
+                                    </div>
+                                    <div class="team__skill-number">98%</div>
+                                </div>
+
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">css</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 95%;">
+                                        <hr class="progress_white" style="width: 5%;">
+                                    </div>
+                                    <div class="team__skill-number">95%</div>
+                                </div>
+
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">javascript</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 81%;">
+                                        <hr class="progress_white" style="width: 19%;">
+                                    </div>
+                                    <div class="team__skill-number">81%</div>
+                                </div>
+
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">bootstrap</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 75%;">
+                                        <hr class="progress_white" style="width: 25%;">
+                                    </div>
+                                    <div class="team__skill-number">75%</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="team__info">
-                        <div class="team__title">my skills</div>
-                        <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
-                        <div class="team__skills">
 
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">php</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 91%;">
-                                    <hr class="progress_white" style="width: 9%;">
-                                </div>
-                                <div class="team__skill-number">91%</div>
+                    <div class="team__cart container-row">
+                        <div class="team__main container-column">
+                            <img src="img/team/team_03.jpg" alt="" class="team__photo">
+                            <div class="team__name">KATE DANWER</div>
+                            <div class="team__position">BACKEND DEVELOPER</div>
+                            <ul class="team__social container-row">
+                                <li><img src="img/team/social_01.png" alt=""></li>
+                                <li><img src="img/team/social_02.png" alt=""></li>
+                                <li><img src="img/team/social_03.png" alt=""></li>
+                            </ul>
+                            <div class="radio-button">
+                                <input type="button" onclick="team(0)">
+                                <input type="button" onclick="team(1)">
+                                <input type="button" onclick="team(2)" class="radio_active">
                             </div>
+                        </div>
+                        <div class="team__info">
+                            <div class="team__title">my skills</div>
+                            <div class="team__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.nsectetur adipisicing elit, sed do eiusmod tempor.</div>
+                            <div class="team__skills">
 
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">python</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 78%;">
-                                    <hr class="progress_white" style="width: 22%;">
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">php</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 91%;">
+                                        <hr class="progress_white" style="width: 9%;">
+                                    </div>
+                                    <div class="team__skill-number">91%</div>
                                 </div>
-                                <div class="team__skill-number">78%</div>
-                            </div>
 
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">node js</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 87%;">
-                                    <hr class="progress_white" style="width: 13%;">
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">python</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 78%;">
+                                        <hr class="progress_white" style="width: 22%;">
+                                    </div>
+                                    <div class="team__skill-number">78%</div>
                                 </div>
-                                <div class="team__skill-number">87%</div>
-                            </div>
 
-                            <div class="team__skill-block">
-                                <div class="team__skill-name">mysql</div>
-                                <div class="team__skill-line">
-                                    <hr class="progress" style="width: 92%;">
-                                    <hr class="progress_white" style="width: 8%;">
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">node js</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 87%;">
+                                        <hr class="progress_white" style="width: 13%;">
+                                    </div>
+                                    <div class="team__skill-number">87%</div>
                                 </div>
-                                <div class="team__skill-number">92%</div>
+
+                                <div class="team__skill-block">
+                                    <div class="team__skill-name">mysql</div>
+                                    <div class="team__skill-line">
+                                        <hr class="progress" style="width: 92%;">
+                                        <hr class="progress_white" style="width: 8%;">
+                                    </div>
+                                    <div class="team__skill-number">92%</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -582,7 +602,25 @@
         </div>
     </footer>
 
-    <script src="scripts/teamSwitch.js"></script>
+    <!-- <script src="scripts/teamSwitch.js"></script> -->
     <script src="gallery/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: true
+            });
+            $('.slider__team').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+                arrows: true
+            });
+        });
+    </script>
 </body>
 </html>

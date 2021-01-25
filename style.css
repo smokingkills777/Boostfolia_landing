@@ -295,9 +295,26 @@ header .container{
 .partners .list-item{
     margin: 0px 2%;
 }
+.slick-slide:focus {
+    outline: none;
+}
+.slider{
+    width: 80%;
+    margin: 0 auto; 
+}
+.slider__item img{
+    margin: 0 auto;
+}
 
+.slider__team{
+    margin: 0px 10px;
+}
+.team .slick-prev:before, .slick-next:before{
+    color: #ebebeb;
+}
 .team__cart{
-    justify-content: space-between;
+    display: flex !important;
+    justify-content: space-around;
     margin-top: 84px;
     transition: all .5s linear;
     -webkit-transition: all .5s linear;
@@ -307,7 +324,7 @@ header .container{
     color: #3d3d3d
 }
 .team__main{
-    width: 32%;
+    width: 30%;
     justify-content: center;
     text-align: center;
     padding-top: 72px;
@@ -340,7 +357,7 @@ header .container{
     margin: 0px 5px;
 }
 .team__info{
-    width: 66%;
+    width: 60%;
     padding-top: 123px;
     padding-bottom: 88px;
 }
@@ -380,13 +397,6 @@ header .container{
 }
 .team__skill-line{
     display: flex;
-}
-#member00, #member01, #member02{
-    transition: all .3s linear;
-    -webkit-transition: all .3s linear;
-}
-#member01, #member02{
-    display: none;
 }
 .radio-button{
     margin-top: 41px;
