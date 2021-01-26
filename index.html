@@ -70,10 +70,10 @@
                 <div class="section__subtitle">
                     Lorem ipsum dolo the lorem r sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 </div>
-                <div class="button">play now</div>
+                <div class="button" onclick="jQuery('#video').attr('src','https://www.youtube.com/embed/m7VP-TnM9us?autoplay=1')">play now</div>
             </div>
             <div class="video__content">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IUN664s7N-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/m7VP-TnM9us" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
 
@@ -146,20 +146,6 @@
         </section>
 
         <section class="partners wrapper">
-<!--             <div class="container">
-                <div class="slider">
-                    <div class="list-item container-column">
-                        <img src="img/partners/01.png" alt="">
-                    </div>
-                    <div class="list-item container-column">
-                        <img src="img/partners/02.png" alt="">
-                    </div>
-                    <div class="list-item container-column">
-                        <img src="img/partners/03.png" alt="">
-                    </div>
-                </div>
-            </div> -->
-
             <div class="container">
                 <div class="slider">
                     <div class="slider__item">
@@ -583,7 +569,21 @@
         </section>
 
         <section class="map">
-            Locate on map
+            <div class="map__container">
+                <button class="accordion">
+                    <div class="section-title-second">
+                        <!-- <div class="accordion__text">LOCATE ON MAP</div>
+                        <div class="accordion__img"></div> -->
+                        LOCATE ON MAP
+                        <img src="img/map_arrow.png" alt="">
+                    </div>
+                </button>
+                <div class="panel">
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5204.489723213178!2d30.542712845920054!3d50.43572382137672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf082dcc92f1%3A0xd4f5394682dd5887!2z0JHQuNC30L3QtdGBLdGG0LXQvdGC0YAgItCh0LXQvdCw0YLQvtGAIg!5e0!3m2!1sru!2sua!4v1611648170998!5m2!1sru!2sua" width="1088" height="476" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -602,25 +602,10 @@
         </div>
     </footer>
 
-    <!-- <script src="scripts/teamSwitch.js"></script> -->
     <script src="gallery/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('.slider').slick({
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                arrows: true
-            });
-            $('.slider__team').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                infinite: true,
-                arrows: true
-            });
-        });
-    </script>
+    <script src="scripts/slidersSlick.js"></script>
+    <script src="scripts/accordion.js"></script>
 </body>
 </html>
