@@ -534,11 +534,11 @@ header .container{
 .plan__item{
     width: 24.8%;
 }
-.plan__item:hover{
+.plan__item:hover, .plan__item:focus{
     border: 1px solid #f6744b;
     cursor: pointer;
 }
-.plan__item:hover span{
+.plan__item:hover span, .plan__item:focus span{
     color: #f6744b;
 }
 .plan__header{
@@ -844,10 +844,18 @@ footer{
         flex-wrap: wrap;
     }
     .list__item_features{
-        width: 45%; 
-        margin-top: 20px;   
+        width: 80%; 
+        margin-top: 50px;   
     }
-
+    .list__item_features .list__title{
+        margin-top: 15px;
+    }
+    .list__item_features .list__text{
+        margin-top: 20px;
+    }
+    .blog__gallery{
+        margin-top: 30px;
+    }
     .blog__refs{
         top: 40%; left: 35%; bottom: 0; right: 0;
     }
